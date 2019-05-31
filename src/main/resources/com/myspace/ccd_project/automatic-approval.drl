@@ -1,0 +1,17 @@
+package com.myspace.ccd_project;
+
+import com.myspace.ccd_project.FraudData;
+import org.kie.api.runtime.process.CaseData;
+
+rule "automatic-approval"
+ruleflow-group "automatic-approval"
+no-loop
+when
+    $caseFile: CaseData()
+    $fraudData: FraudData(automated == true) from $caseFile.getData("fraudData")
+then
+    System.out.println("Automatically approving chargeback.");
+    modify($caseFile) {
+        add("approvedChargeback", true);
+    }
+end
