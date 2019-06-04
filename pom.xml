@@ -6,7 +6,7 @@
   <artifactId>ccd-project</artifactId>
   <version>1.0.0-SNAPSHOT</version>
   <packaging>kjar</packaging>
-  <name>ccd-project-1</name>
+  <name>ccd-project</name>
   <description>Credit Card Dispute Automation project</description>
   <dependencies>
     <dependency>
