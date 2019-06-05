@@ -169,7 +169,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric class="float">1.0</valueNumeric>
+        <valueNumeric class="float">0.0</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_FLOAT</dataType>
         <isOtherwise>false</isOtherwise>
@@ -216,7 +216,7 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueNumeric class="float">250.0</valueNumeric>
+        <valueNumeric class="float">500.0</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_FLOAT</dataType>
         <isOtherwise>false</isOtherwise>
