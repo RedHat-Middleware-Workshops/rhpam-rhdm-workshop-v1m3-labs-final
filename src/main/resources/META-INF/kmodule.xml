@@ -1,1 +1,6 @@
-<kmodule xmlns="http://www.drools.org/xsd/kmodule" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+<kmodule xmlns="http://www.drools.org/xsd/kmodule" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <kbase name="ccd-kbase" default="true" eventProcessingMode="cloud" equalsBehavior="identity">
+    <ksession name="ccd-ksession-stateful" type="stateful" default="true" clockType="realtime"/>
+    <ksession name="ccd-ksession-stateless" type="stateless" default="false" clockType="realtime"/>
+  </kbase>
+</kmodule>

@@ -6,8 +6,12 @@
   </rowNumberCol>
   <descriptionCol>
     <hideColumn>false</hideColumn>
-    <width>305</width>
+    <width>280</width>
   </descriptionCol>
+  <ruleNameColumn>
+    <hideColumn>true</hideColumn>
+    <width>150</width>
+  </ruleNameColumn>
   <metadataCols/>
   <attributeCols>
     <attribute-column52>
@@ -31,18 +35,18 @@
       <conditions>
         <condition-column52>
           <typedDefaultValue>
-            <valueString></valueString>
+            <valueString>Standard</valueString>
             <dataType>STRING</dataType>
             <isOtherwise>false</isOtherwise>
           </typedDefaultValue>
           <hideColumn>false</hideColumn>
-          <width>100</width>
+          <width>222</width>
           <header>Status</header>
           <constraintValueType>1</constraintValueType>
           <factField>status</factField>
           <fieldType>String</fieldType>
           <operator>==</operator>
-          <valueList>Standard,Gold,Silver</valueList>
+          <valueList>Standard,Silver,Gold</valueList>
           <parameters/>
           <binding></binding>
         </condition-column52>
@@ -64,7 +68,7 @@
             <isOtherwise>false</isOtherwise>
           </typedDefaultValue>
           <hideColumn>false</hideColumn>
-          <width>114</width>
+          <width>205</width>
           <header>Minimum Amount</header>
           <constraintValueType>1</constraintValueType>
           <factField>totalFraudAmount</factField>
@@ -80,8 +84,8 @@
             <isOtherwise>false</isOtherwise>
           </typedDefaultValue>
           <hideColumn>false</hideColumn>
-          <width>135</width>
-          <header>Max Amount</header>
+          <width>245</width>
+          <header>Maximum Amount</header>
           <constraintValueType>1</constraintValueType>
           <factField>totalFraudAmount</factField>
           <fieldType>Float</fieldType>
@@ -104,7 +108,7 @@
         <isOtherwise>false</isOtherwise>
       </typedDefaultValue>
       <hideColumn>false</hideColumn>
-      <width>138</width>
+      <width>100</width>
       <header>Risk Scoring</header>
       <boundName>data</boundName>
       <factField>disputeRiskRating</factField>
@@ -143,6 +147,7 @@
     <imports/>
   </imports>
   <packageName>com.myspace.ccd_project</packageName>
+  <version>739</version>
   <tableFormat>EXTENDED_ENTRY</tableFormat>
   <hitPolicy>NONE</hitPolicy>
   <data>
@@ -154,7 +159,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>Standard costumer low risk</valueString>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>Standard customer low risk</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -192,6 +202,11 @@
         <valueNumeric class="int">2</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -236,7 +251,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>Standard customer high risk </valueString>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>Standard customer high risk</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -276,7 +296,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>Silver customer low risk </valueString>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>Silver customer low risk</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -317,7 +342,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>Silver customer medium risk </valueString>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>Silver customer medium risk</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
@@ -358,6 +388,11 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
         <valueString>Silver customer high risk</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -395,6 +430,11 @@
         <valueNumeric class="int">7</valueNumeric>
         <valueString></valueString>
         <dataType>NUMERIC_INTEGER</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
@@ -439,7 +479,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>Gold customer medium risk </valueString>
+        <valueString></valueString>
+        <dataType>STRING</dataType>
+        <isOtherwise>false</isOtherwise>
+      </value>
+      <value>
+        <valueString>Gold customer medium risk</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>

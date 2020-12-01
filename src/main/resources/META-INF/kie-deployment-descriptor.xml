@@ -20,14 +20,7 @@
     <event-listeners/>
     <task-event-listeners/>
     <globals/>
-    <work-item-handlers>
-        <work-item-handler>
-            <resolver>mvel</resolver>
-            <identifier>new org.jbpm.casemgmt.impl.wih.StartCaseWorkItemHandler(ksession);</identifier>
-            <parameters/>
-            <name>StartCaseInstance</name>
-        </work-item-handler>
-    </work-item-handlers>
+    <work-item-handlers/>
     <environment-entries/>
     <configurations/>
     <required-roles/>

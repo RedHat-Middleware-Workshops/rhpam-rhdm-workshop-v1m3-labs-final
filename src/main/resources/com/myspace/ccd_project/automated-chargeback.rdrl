@@ -4,7 +4,6 @@ import java.lang.Number;
 
 rule "automated-chargeback"
 	dialect "mvel"
-	ruleflow-group "automated-chargeback"
 	when
 		CreditCardHolder( status in ( "Gold", "Platinum" ) )
 		data : FraudData( )

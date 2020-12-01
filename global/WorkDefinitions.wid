@@ -57,33 +57,37 @@
   ],
 
   [
+     "name" : "BusinessRuleTask",
+     "parameters" : [
+       "Language" : new StringDataType(),
+       "KieSessionName" : new StringDataType(),
+       "KieSessionType" : new StringDataType()
+     ],
+     "displayName" : "Business Rule Task",
+     "icon" : "defaultbusinessrulesicon.png",
+     "category" : "Decision tasks"
+   ],
+
+   [
+     "name" : "DecisionTask",
+     "parameters" : [
+       "Language" : new StringDataType(),
+       "Namespace" : new StringDataType(),
+       "Model" : new StringDataType(),
+       "Decision" : new StringDataType()
+     ],
+     "displayName" : "Decision Task",
+     "icon" : "defaultdecisionicon.png",
+     "category" : "Decision tasks"
+   ],
+
+   [
     "name" : "Milestone",
     "parameters" : [
-      "Condition" : new StringDataType()
+        "Condition" : new StringDataType()
     ],
     "displayName" : "Milestone",
     "icon" : "defaultmilestoneicon.png",
     "category" : "Milestone"
-  ],
-  
-  [
-    "name" : "StartCaseInstance",
-    "parameters" : [
-      "DeploymentId" : new StringDataType(),
-      "CaseDefinitionId" : new StringDataType(),
-      "Data_" : new StringDataType(),
-      "UserRole_" : new StringDataType(),
-      "GroupRole_" : new StringDataType(),
-      "DataAccess_" : new StringDataType(),
-      "Independent" : new StringDataType(),
-      "DestroyOnAbort" : new StringDataType()
-    ],
-    "results" : [
-        "CaseId" : new StringDataType(),
-    ],
-    "displayName" : "Sub Case",
-    "icon" : "defaultsubcaseicon.png",
-    "category" : "Cases"
-  ]
-
+    ]
 ]
