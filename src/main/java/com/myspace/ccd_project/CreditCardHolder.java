@@ -10,12 +10,11 @@ public class CreditCardHolder implements java.io.Serializable {
 
 	@org.kie.api.definition.type.Label("Age")
 	private java.lang.Integer age;
-	@org.kie.api.definition.type.Label("Balance Ratio")
-	private java.lang.Float balanceRatio;
-	@org.kie.api.definition.type.Label("Risk Rating")
-	private java.lang.Integer riskRating;
 	@org.kie.api.definition.type.Label("Status")
 	private java.lang.String status;
+
+	@org.kie.api.definition.type.Label(value = "StateCode")
+	private java.lang.String state;
 
 	public CreditCardHolder() {
 	}
@@ -28,22 +27,6 @@ public class CreditCardHolder implements java.io.Serializable {
 		this.age = age;
 	}
 
-	public java.lang.Float getBalanceRatio() {
-		return this.balanceRatio;
-	}
-
-	public void setBalanceRatio(java.lang.Float balanceRatio) {
-		this.balanceRatio = balanceRatio;
-	}
-
-	public java.lang.Integer getRiskRating() {
-		return this.riskRating;
-	}
-
-	public void setRiskRating(java.lang.Integer riskRating) {
-		this.riskRating = riskRating;
-	}
-
 	public java.lang.String getStatus() {
 		return this.status;
 	}
@@ -52,13 +35,19 @@ public class CreditCardHolder implements java.io.Serializable {
 		this.status = status;
 	}
 
-	public CreditCardHolder(java.lang.Integer age,
-			java.lang.Float balanceRatio, java.lang.Integer riskRating,
-			java.lang.String status) {
+	public java.lang.String getState() {
+		return this.state;
+	}
+
+	public void setState(java.lang.String state) {
+		this.state = state;
+	}
+
+	public CreditCardHolder(java.lang.Integer age, java.lang.String status,
+			java.lang.String state) {
 		this.age = age;
-		this.balanceRatio = balanceRatio;
-		this.riskRating = riskRating;
 		this.status = status;
+		this.state = state;
 	}
 
 }
